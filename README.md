@@ -55,7 +55,7 @@ soundpuff-gui/
 
 - Node.js 16+
 - npm or yarn
-- Backend API running (see backendsreadme.md)
+- Backend API running (see backend repo)
 
 ### Installation
 
