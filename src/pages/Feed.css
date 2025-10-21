@@ -1,0 +1,108 @@
+.feed-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.feed-header h1 {
+  color: #333;
+  font-size: 32px;
+}
+
+.btn-create {
+  background-color: #1db954;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  display: inline-block;
+}
+
+.btn-create:hover {
+  background-color: #1aa34a;
+}
+
+.empty-feed {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.empty-feed h2 {
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.empty-feed p {
+  color: #666;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.feed-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.feed-card-header {
+  margin-bottom: 12px;
+}
+
+.feed-card-header h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.feed-card-creator {
+  color: #1db954;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.feed-card-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.feed-card-meta {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #999;
+}

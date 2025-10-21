@@ -1,0 +1,204 @@
+.playlist-view-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.playlist-header {
+  background: linear-gradient(135deg, #1db954, #1ed760);
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.playlist-header-content h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.playlist-creator {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.playlist-creator a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.playlist-description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.playlist-stats {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.playlist-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-like,
+.btn-liked {
+  background-color: white;
+  color: #1db954;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-liked {
+  background-color: #1db954;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-delete {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.playlist-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.songs-list,
+.comments-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.songs-list h2,
+.comments-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.song-item {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+.song-item:last-child {
+  border-bottom: none;
+}
+
+.song-number {
+  color: #999;
+  font-size: 14px;
+  min-width: 20px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.song-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.song-artist {
+  color: #666;
+  font-size: 14px;
+}
+
+.song-album {
+  color: #999;
+  font-size: 12px;
+}
+
+.comment-form {
+  margin-bottom: 24px;
+}
+
+.comment-form textarea {
+  margin-bottom: 12px;
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comment-item {
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.comment-author {
+  color: #1db954;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.comment-author:hover {
+  text-decoration: underline;
+}
+
+.comment-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.comment-content {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.btn-delete-comment {
+  background: none;
+  border: none;
+  color: #ff4444;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn-delete-comment:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .playlist-content {
+    grid-template-columns: 1fr;
+  }
+}
